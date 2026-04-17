@@ -910,7 +910,6 @@ Mongoose helps by:
   - `findByIdAndDelete()`
   - `save()`
 
-This is easier for beginners than using raw database queries everywhere.
 
 ## 11. Why the Project Is Split Into Controllers, Routes, and Models
 
@@ -997,9 +996,9 @@ http://localhost:5173
 - `axios.delete("/api/notes/:id")` deletes the note
 - user is redirected to the home page
 
-## 14. Beginner Lessons Hidden Inside This Project
+## 14. Important Insights
 
-This small app teaches many real-world ideas:
+This web app gives an overall idea about:
 
 - how a frontend and backend are separate projects
 - how APIs connect them
@@ -1011,7 +1010,7 @@ This small app teaches many real-world ideas:
 - how environment variables protect sensitive values
 - how npm scripts make projects easier to run
 
-## 15. Common Beginner Questions
+## 15. Common Questions
 
 ### Why does the frontend not talk to MongoDB directly?
 
