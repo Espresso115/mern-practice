@@ -1,6 +1,6 @@
-# MERN Notes App: Beginner-Friendly Project Guide
+# MERN Notes App
 
-This project is a small full-stack notes application built with a modern JavaScript stack:
+This project is a small full-stack notes application built with the MERN stack:
 
 - **MongoDB** stores the data
 - **Express** provides the backend API
