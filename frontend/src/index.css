@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+    color: #1f2520;
+    background:
+      radial-gradient(circle at top, rgba(184, 134, 75, 0.16), transparent 34%),
+      linear-gradient(180deg, #f7f3eb 0%, #efe7da 100%);
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top, rgba(184, 134, 75, 0.16), transparent 34%),
+      linear-gradient(180deg, #f7f3eb 0%, #efe7da 100%);
+    color: #1f2520;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(45, 76, 69, 0.18);
+    color: #1f2520;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply relative min-h-screen overflow-hidden;
+  }
+
+  .app-shell::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgba(31, 37, 32, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(31, 37, 32, 0.03) 1px, transparent 1px);
+    background-size: 36px 36px;
+    opacity: 0.32;
+  }
+
+  .surface-panel {
+    @apply border border-base-300/70 bg-base-100/85 shadow-[0_18px_60px_-36px_rgba(23,29,27,0.55)] backdrop-blur-xl;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.32em] text-base-content/55;
+    font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+  }
+
+  .input-field {
+    @apply input input-bordered w-full border-base-300 bg-base-100/80 text-base-content placeholder:text-base-content/40 focus:border-primary focus:outline-none;
+  }
+
+  .textarea-field {
+    @apply textarea textarea-bordered min-h-40 w-full rounded-[2rem] border-base-300 bg-base-100/80 px-5 py-4 leading-7 text-base-content placeholder:text-base-content/40 focus:border-primary focus:outline-none;
+  }
+}
