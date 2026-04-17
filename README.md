@@ -1054,38 +1054,3 @@ Because this app has multiple pages and views, but we want navigation to feel sm
 
 Together, they speed up UI development.
 
-## 16. If You Want To Extend This App
-
-Good beginner-friendly next features would be:
-
-- search notes
-- sort notes by updated date
-- categories or tags
-- authentication
-- markdown support
-- pagination
-- note archiving
-- dark/light theme switch
-
-Each of these would teach a different full-stack concept.
-
-## 17. Final Summary
-
-This project is a clean example of a beginner-friendly MERN-style architecture:
-
-- **MongoDB** stores the data
-- **Express + Node.js** expose an API
-- **React** renders the user interface
-- **Vite** powers the frontend development experience
-- **Tailwind + DaisyUI** style the app
-
-If you understand how the files in this project relate to one another, you already understand many of the foundations of full-stack web development.
-
-The most important mental model to keep is this:
-
-1. The **frontend** collects input and shows UI.
-2. The **backend** receives requests and runs logic.
-3. The **database** stores the data permanently.
-4. HTTP is the bridge between them.
-
-That is the core of full-stack development.
